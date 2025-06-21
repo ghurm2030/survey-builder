@@ -1,0 +1,69 @@
+{
+  "name": "غرموف - منصة الاستبيانات",
+  "englishName": "Ghurmoof Survey Platform",
+  "version": "1.0.0",
+  "description": "منصة شاملة لبناء وإدارة الاستبيانات باللغة العربية",
+  "repository": "https://github.com/ghurm2030/survey-builder",
+  "deploymentUrl": "سيتم إضافة الرابط بعد النشر على Vercel",
+  "language": "Arabic (RTL)",
+  "framework": "Node.js + Express.js",
+  "frontend": "Embedded HTML with Arabic UI",
+  "database": "In-memory storage (no external DB required)",
+  "features": [
+    "نظام مصادقة مرن (اسم/بريد/جوال)",
+    "إدارة المستخدمين والصلاحيات", 
+    "إنشاء وإدارة الاستبيانات",
+    "أنواع أسئلة متعددة",
+    "واجهة عربية متجاوبة",
+    "APIs متكاملة"
+  ],
+  "testAccounts": {
+    "admin": {
+      "identifier": "admin",
+      "role": "admin",
+      "description": "مدير النظام"
+    },
+    "user": {
+      "identifier": "user1", 
+      "role": "user",
+      "description": "مستخدم عادي"
+    },
+    "email": {
+      "identifier": "test@example.com",
+      "role": "user", 
+      "description": "مستخدم بريد إلكتروني"
+    },
+    "phone": {
+      "identifier": "0501234567",
+      "role": "user",
+      "description": "مستخدم رقم جوال"
+    }
+  },
+  "apis": {
+    "health": "/api/health",
+    "users": "/api/users", 
+    "surveys": "/api/surveys",
+    "auth": "/api/auth/login"
+  },
+  "deployment": {
+    "platforms": ["Vercel", "Netlify", "Railway", "Heroku"],
+    "preferred": "Vercel",
+    "requirements": ["Node.js 18+", "npm"],
+    "environmentVariables": ["NODE_ENV=production"]
+  },
+  "files": {
+    "main": "main.js",
+    "vercelEntry": "api/index.js",
+    "config": "vercel.json",
+    "documentation": [
+      "README.md",
+      "DEPLOYMENT.md", 
+      "VERCEL_DEPLOY.md",
+      "GITHUB_SETUP.md",
+      "UPLOAD_GUIDE.md"
+    ]
+  },
+  "createdDate": "2025-06-21",
+  "lastUpdated": "2025-06-21",
+  "status": "Ready for deployment"
+}

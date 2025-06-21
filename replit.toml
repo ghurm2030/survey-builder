@@ -1,0 +1,11 @@
+[deployment]
+build = "node simple-build.js"
+run = "node main.js"
+deploymentTarget = "cloudrun"
+
+[packager]
+language = "nodejs"
+
+[[ports]]
+localPort = 3000
+externalPort = 80
